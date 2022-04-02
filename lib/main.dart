@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
     {
       'questionText': 'What\'s your fave anime ? ',
       'answers': [
-        {'text': '1 . Naruto', 'score': 05},
+        {'text': '1 . Naruto', 'score': 00},
         {'text': '2 . One Piece ', 'score': 00},
         {'text': '3 . Hentai', 'score': 10},
         {'text': '4 . RomCom', 'score': 10},
@@ -49,17 +49,27 @@ class _MyAppState extends State<MyApp> {
       'answers': [
         {'text': '1 . Until Their Last wish come true', 'score': 00},
         {'text': '2 . Until Their body Destroys ', 'score': 00},
-        {'text': '3 . until god appears', 'score': 00},
+        {'text': '3 . Until god appears', 'score': 00},
         {
-          'text': '4 . until you realise u r crazy to believe in this shit ',
+          'text':
+              '4 . Until You realise You Are Crazy To Believe In This Shit ',
           'score': 10
         },
       ]
     },
     {
+      'questionText': 'This Application Is built by  ?',
+      'answers': [
+        {'text': '1 . A Genius', 'score': 00},
+        {'text': '2 . A Legend ', 'score': 00},
+        {'text': '3 . A Creep ', 'score': 10},
+        {'text': '4 . Yours Only FBoy ', 'score': 00}
+      ],
+    },
+    {
       'questionText': 'Do you wanna die ?',
       'answers': [
-        {'text': '1 . Yes', 'score': 10},
+        {'text': '1 . Yes', 'score': 00},
         {'text': '2 . DropDead Already ', 'score': 10}
       ],
     }

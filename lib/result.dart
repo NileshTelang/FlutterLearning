@@ -10,12 +10,10 @@ class result extends StatelessWidget {
 
   String get resultphrase {
     var res = 'You Suck bruh ! ';
-    if (resultScore < 40) {
-      res = 'You Good Bruh !';
-    } else if (resultScore < 30) {
-      res = 'well you could do better !';
-    } else if (resultScore > 40) {
+    if (resultScore > 50) {
       res = 'Smashed It Homie ! niecely done ';
+    } else {
+      var res = 'You Suck bruh ! ';
     }
     return res;
   }
@@ -23,30 +21,33 @@ class result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        children: <Widget>[
-          Text(
-            resultphrase,
-            style: TextStyle(
-              fontSize: 31,
-              fontWeight: FontWeight.bold,
+      child: Container(
+        margin: EdgeInsets.all(20),
+        child: Column(
+          children: <Widget>[
+            Text(
+              resultphrase,
+              style: TextStyle(
+                fontSize: 31,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
             ),
-            textAlign: TextAlign.center,
-          ),
-          Center(
-            child: TextButton(
-                onPressed: resetQuiz,
-                child: Center(
-                  child: Container(
-                    child: Text(
-                      'Restart Quiz !',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.blue),
+            Center(
+              child: TextButton(
+                  onPressed: resetQuiz,
+                  child: Center(
+                    child: Container(
+                      child: Text(
+                        'Restart Quiz !',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.blue),
+                      ),
                     ),
-                  ),
-                )),
-          )
-        ],
+                  )),
+            )
+          ],
+        ),
       ),
     );
   }
