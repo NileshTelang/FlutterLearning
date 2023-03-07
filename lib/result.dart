@@ -10,7 +10,7 @@ class result extends StatelessWidget {
 
   String get resultphrase {
     var res = 'You Suck bruh ! ';
-    if (resultScore > 50) {
+    if (resultScore > 35) {
       res = 'Smashed It Homie ! niecely done ';
     } else {
       var res = 'You Suck bruh ! ';

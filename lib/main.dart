@@ -50,11 +50,7 @@ class _MyAppState extends State<MyApp> {
         {'text': '1 . Until Their Last wish come true', 'score': 00},
         {'text': '2 . Until Their body Destroys ', 'score': 00},
         {'text': '3 . Until god appears', 'score': 00},
-        {
-          'text':
-              '4 . Until You realise You Are Crazy To Believe In This Shit ',
-          'score': 10
-        },
+        {'text': '4 . Until You realise You Are Crazy To Believe In This Shit ', 'score': 10},
       ]
     },
     {
@@ -107,9 +103,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: Container(
-            child: _qindex < _questions.length
-                ? quiz(_corc, _qindex, _questions)
-                : result(_score, _resetQuiz),
+            child: _qindex < _questions.length ? quiz(_corc, _qindex, _questions) : result(_score, _resetQuiz),
           ),
         ),
       ),
